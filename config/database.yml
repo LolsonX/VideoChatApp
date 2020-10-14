@@ -83,6 +83,8 @@ test:
 #
 production:
   <<: *default
-  database: CloudVideoApp_production
-  username: CloudVideoApp
-  password: <%= ENV['CLOUDVIDEOAPP_DATABASE_PASSWORD'] %>
+  host: <%= ENV.fetch('DATABASE_URL', '127.0.0.1') %>
+  database: <%= ENV.fetch('DATABASE_NAME', 'CloudVideoApp_development') %>
+  username: <%= ENV.fetch('DATABASE_USER', 'clouduser') %>
+  password: <%= ENV.fetch('DATABASE_PASSWORD', 'cloudMaster') %>
+  port: <%= ENV.fetch('DATABASE_PORT', '5432') %>
