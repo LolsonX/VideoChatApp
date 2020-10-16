@@ -9,9 +9,15 @@
     <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/navigation' %>
+<div class="container mt-3">
+	  <%= yield %>
+</div>
+
+
   </body>
 </html>

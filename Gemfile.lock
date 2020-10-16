@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/king601/devise-bootstrapped.git
+  revision: 59e23f0673c9a273be765ca26091c5792cd25fa7
+  branch: bootstrap4
+  specs:
+    devise-bootstrapped (0.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -81,10 +88,14 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-pwned_password (0.1.9)
+      devise (~> 4)
+      pwned (~> 2.0.0)
     erubi (1.9.0)
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gravatar_image_tag (1.2.0)
     httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -126,6 +137,7 @@ GEM
     public_suffix (4.0.6)
     puma (4.3.6)
       nio4r (~> 2.0)
+    pwned (2.0.2)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -228,6 +240,9 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise (~> 4.7)
+  devise-bootstrapped!
+  devise-pwned_password
+  gravatar_image_tag
   jbuilder (~> 2.7)
   listen (~> 3.2)
   opentok (~> 4.1)

@@ -57,4 +57,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'opentok', '~> 4.1'
 
-gem "devise", "~> 4.7"
+gem 'devise', '~> 4.7'
+gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
+gem 'devise-pwned_password'
+gem 'gravatar_image_tag'

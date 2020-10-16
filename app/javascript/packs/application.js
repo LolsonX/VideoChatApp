@@ -6,6 +6,6 @@
 require("@rails/ujs").start()
 
 
-window.Rails = Rails
-
 import "controllers"
+import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/css/bootstrap'
